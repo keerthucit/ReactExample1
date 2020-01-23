@@ -6,9 +6,11 @@ import Welcome from './Welcome';
 import * as serviceWorker from './serviceWorker';
 import HCMDemo from './HCMDemo';
 import HCMDemo2 from './HCMDemo2';
+import Apiexample from './Apiexample';
 
 //ReactDOM.render(<Welcome />, document.getElementById('root'));
 
+//ReactDOM.render(<Apiexample />, document.getElementById('root'));
 ReactDOM.render(<HCMDemo2 />, document.getElementById('root'));
 
 //ReactDOM.render(<App />, document.getElementById('root'));

@@ -1,6 +1,7 @@
 import React, { Component, useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { ImageExposureNeg1 } from 'material-ui/svg-icons';
+import Apiexample from './Apiexample';
 
 const HCMDemo2 = () => {
   const [name, setName] = useState('Nipun')
@@ -62,7 +63,7 @@ const HCMDemo2 = () => {
   // );
   // return [ind,Dropdownage,updateInd];
   //     };
-  const [user, setUser] = useState("Dan");
+  //const [user, setUser] = useState("Dan");
   // const[age,setAge]=useState(990);
   const [agemon, AgemonDropdown, setAgemon] = useDropdown([
     67,
@@ -116,9 +117,12 @@ const HCMDemo2 = () => {
   return (
 
     <div className="App">
+      
+    <br /><br />
       <FirstNameDropdown />
       <LastNameDropdown />
       <AgemonDropdown />
+      <br /> <br />
       <button onClick={reset}>Reset</button>
       <br /> <br />
 
@@ -129,7 +133,7 @@ const HCMDemo2 = () => {
       </button>
       <input value={message} onChange={handleMessageChange} />
       <button onClick={handleSendClick}>Send</button>
-
+      <Apiexample></Apiexample>
     </div>
   )
 
